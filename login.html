@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="conteudo">
+        <div class="form">
+            <h1>Bem-vindo ao Memo</h1>
+            <span>e-mail:</span>
+            <input id="email" type="email" name="email" placeholder="exemplo@email.com" class="email" onchange="validateFields()">
+            <span> senha:</span>
+            <input id="senha" type="senha" name="senha" placeholder="senha" class="senha" onchange="validateFields()">
+            <button id="entrar" class="entrar" disabled="true" onclick="login()">Entrar</button>
+            <button id="recuperar" class="recuperar" disabled="true">Recuperar senha</button>
+            <button class="registrar" onclick="registrar()">Registar-se</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
