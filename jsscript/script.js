@@ -99,12 +99,17 @@ function validateEmail(email){
     return /\S+@\S+\.\S+/.test(email);
 }
 
-//Redirecionamento do botão de entrar para tela de criaçã ode notas
-function login(){
-    window.location = "index.html";
+//Redirecionamento do botão de entrar para tela inicial
+function login() {
+    window.location = "landing.html";
 }
 
 //Redirecionamento do botão de registro para tela de registro
-function registrar(){
+function registrar() {
     window.location = "registro.html";
+}
+
+//Redirecionamento de botão para a de notas
+function notas() {
+    window.location = "index.html";
 }
