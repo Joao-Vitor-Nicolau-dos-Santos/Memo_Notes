@@ -10,6 +10,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="dropdown">
+        <button onclick="alternarDropdown()" class="botao-dropdown">☰</button>
+        <div id="meuDropdown" class="conteudo-dropdown">
+            <a href="landing.html">Ínicio</a>
+            <a href="index.html">Criar nova nota</a>
+            <a href="config.html">Configurações</a>
+            <a href="login.html">Sair</a>
+        </div>
+    </div>
+
     <div class="container">
         <h1>Notas</h1>
         <textarea id="noteContent" placeholder="Escreva sua nota aqui..."></textarea>
@@ -18,11 +28,14 @@
             <button id="saveNote" class="botao">Salvar</button>
             <button id="deleteNote" class="botao">Excluir</button>
         </div>
+
         <h2>Notas Salvas</h2>
         <ul id="notesList"></ul>
     </div>
     
-    <script src="../jsscript/script.js"></script>
+    <script src="../jsscript/notas.js"></script>
+    <script src="../jsscript/dropdown.js"></script>
+    <script src="../jsscript/config.js"></script>
     
 </body>
 </html>

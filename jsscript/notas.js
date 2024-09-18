@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const li = document.createElement('li');
             li.innerHTML = `
                 ${note}
-                <button onclick="deleteNote(${index})">Excluir</button>
+                <button onclick="deleteNote(${index})">Editar</button>
             `;
             li.onclick = () => loadNoteForEditing(index, note);
             notesList.appendChild(li);
@@ -68,48 +68,3 @@ document.addEventListener('DOMContentLoaded', function() {
 
     loadNotes();
 });
-
-//Sistema de validação senha e e-mail
-
-function validateFields() {
-    const emailValid = isEmailValid();
-    document.getElementById("recuperar").disabled = !emailValid;
-
-    const password = isPasswordValid() ;
-    document.getElementById("entrar").disabled = !emailValid || !password;
-}
-
-function isEmailValid() {
-    const email = document.getElementById("email").value;
-    if (!email){
-        return false;
-    }
-    return validateEmail(email);
-}
-
-function isPasswordValid() {
-    const password = document.getElementById('senha').value;
-    if (!password) {
-        return false;
-    }
-    return true;
-}
-
-function validateEmail(email){
-    return /\S+@\S+\.\S+/.test(email);
-}
-
-//Redirecionamento do botão de entrar para tela inicial
-function login() {
-    window.location = "landing.html";
-}
-
-//Redirecionamento do botão de registro para tela de registro
-function registrar() {
-    window.location = "registro.html";
-}
-
-//Redirecionamento de botão para a de notas
-function notas() {
-    window.location = "index.html";
-}

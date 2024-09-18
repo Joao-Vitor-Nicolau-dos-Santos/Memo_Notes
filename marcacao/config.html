@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolher Cor de Fundo</title>
+    <link rel="stylesheet" href="../estilos/style.css">
+</head>
+<body>
+    <div class="dropdown">
+        <button onclick="alternarDropdown()" class="botao-dropdown">☰</button>
+        <div id="meuDropdown" class="conteudo-dropdown">
+            <a href="landing.html">Ínicio</a>
+            <a href="index.html">Criar nova nota</a>
+            <a href="config.html">Configurações</a>
+            <a href="login.html">Sair</a>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h1>Escolha uma cor para o fundo</h1>
+        <div class="buttons">
+            <button onclick="changeColor('red')">Vermelho</button>
+            <button onclick="changeColor('blue')">Azul</button>
+            <button onclick="changeColor('green')">Verde</button>
+            <button onclick="changeColor('yellow')">Amarelo</button>
+            <button onclick="changeColor('white')">Branco</button>
+        </div>
+    </div>
+
+    <script src="../jsscript/dropdown.js"></script>
+    <script src="../jsscript/config.js"></script>
+</body>
+</html>

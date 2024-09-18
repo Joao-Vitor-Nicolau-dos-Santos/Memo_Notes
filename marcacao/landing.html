@@ -10,6 +10,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="dropdown"></div>
+        <button onclick="alternarDropdown()" class="botao-dropdown">☰</button>
+        <div id="meuDropdown" class="conteudo-dropdown">
+            <a href="landing.html">Ínicio</a>
+            <a href="index.html">Criar nova nota</a>
+            <a href="config.html">Configurações</a>
+            <a href="login.html">Sair</a>
+        </div>
+    </div>
+
     <div class="landing">
         <h1>Olá, seja mais do que bem-vindo ao Memo.</h1>
         <h3>Nós desejamos a você um excelente uso de nosso sistema.</h3>
@@ -18,7 +28,7 @@
         <button id="caminho_index" class="botao" onclick="notas()">+</button>
     </div>
     <div class="card"></div>
-    <script src="../jsscript/script.js"></script>
+    <script src="../jsscript/login.js"></script>
 
 </body>
 </html>
